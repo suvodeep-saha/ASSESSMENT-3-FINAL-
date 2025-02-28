@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Form</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 10px;
+    }
+
+    h1 {
+        color: rgb(103, 103, 255);
+        text-transform: uppercase;
+        text-decoration: underline;
+
+    }
+
+    .box {
+        width: 770px;
+        height: 350px;
+        background-color: #6a6aff;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 560px;
+        color: #ffff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: left;
+    }
+
+    .boxx {
+        width: 770px;
+        height: 480px;
+        background-color: #6a6aff;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 560px;
+        color: #ffff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: center;
+    }
+
+    #add {
+        color: rgb(255, 255, 255);
+
+    }
+
+    .hobbies {
+        margin-left: 95px;
+    }
+
+    #city {
+        margin-left: 50px;
+
+    }
+
+    #Country {
+        margin-left: 20px;
+    }
+
+    #State {
+        margin-left: 30px;
+    }
+
+    .aaa {
+        margin-right: 190px;
+    }
+
+    .bbb {
+        margin-right: 210px;
+    }
+
+    .ccc {
+        margin-right: 260px;
+    }
+    .gender{
+        text-align: center;
+        margin-right : 270px;
+    }
+</style>
+
+<body>
+    <h1 align="center">Student Registration Form</h1>
+    <div class="box">
+        <form align="center">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" maxlength="25"> (max 30 characters a-z and A-Z)
+            <br>
+            <br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" maxlength="30"> (max 30 characters a-z and A-Z)
+            <br>
+            <br>
+            <div class="aaa">
+
+
+                <label>Date of Birth:</label>
+                <select name="day">
+                    <option>Day</option>
+
+                </select>
+                <select name="month">
+                    <option>Month</option>
+
+                </select>
+                <select name="year">
+                    <option>Year</option>
+                    <br>
+                </select>
+            </div>
+
+            <div class="bbb">
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email">
+
+            </div>
+            <div class="ccc">
+                <label for="mobile">Mobile Number:</label>
+                <input type="number" id="mobile" name="mobile" maxlength="10">
+            </div>
+             
+            <div class="gender">
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male"> Male
+                <input type="radio" id="female" name="gender" value="female"> Female
+            </div>
+            <br>
+    </div>
+    <div class="boxx">
+        <label id="add">Address</label>
+
+        <textarea id="address" name="address" rows="4" cols="40">
+                </textarea>
+        <br>
+        <br>
+        <label for="city">City :</label>
+        <input type="text" id="fname" name="fname" maxlength="30"> (max 30 characters a-z and A-Z)
+        <br>
+        <br>
+        <label for="city">Pin Code :</label>
+        <input type="number" id="pin" name="pin" maxlength="30"> (6 digit number)
+        <br>
+        <br>
+        <label for="State">State :</label>
+        <input type="text" id="state" name="state" maxlength="30"> (max 30 characters a-z and A-Z)
+        <br>
+        <br>
+        <label for="Country">Country :</label>
+        <input type="text" id="Country" name="Country" maxlength="30" placeholder="India">
+        <br>
+        <br>
+        <label for="hobbies">Hobbies :</label>
+
+        <div class="hobbies">
+            Drawing<input type="checkbox" name="hobbies" value="drawing">
+            Singing<input type="checkbox" name="hobbies" value="Singing">
+            Dancing<input type="checkbox" name="hobbies" value="Dancing">
+            Sketching<input type="checkbox" name="hobbies" value="Sketching">
+            <br>
+            Others <input type="checkbox" name="hobbies" value="Others">
+        </div>
+        <input type="text">
+    </div>
+</body>
+
+</html>
